@@ -1,0 +1,10 @@
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\bin\Debug\laboratornaya4.exe.config
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\bin\Debug\laboratornaya4.exe
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\bin\Debug\laboratornaya4.pdb
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.csprojResolveAssemblyReference.cache
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.Form1.resources
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.Properties.Resources.resources
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.csproj.GenerateResource.Cache
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.csproj.CoreCompileInputs.cache
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.exe
+C:\Users\laura\source\repos\laboratornaya4\laboratornaya4\obj\Debug\laboratornaya4.pdb
