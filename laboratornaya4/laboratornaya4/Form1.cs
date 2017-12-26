@@ -315,7 +315,7 @@ namespace laboratornaya4
             if (float_part.Length > 5)
             {
                 return ToHexInt(Convert.ToInt32(int_part)) + "," +
-                       ToHexDouble(Convert.ToInt32(float_part.Substring(2, 5)), 5).ToString();
+                       ToHexDouble(Convert.ToInt32(float_part.Substring(2, 2)), 5).ToString();
             }
             else
             {
@@ -333,9 +333,11 @@ namespace laboratornaya4
             double dec_number;
             if (textBox28.Text.Contains("1") || textBox26.Text.Contains("1"))
             {
-                dec_number = Math.Pow(-1, Convert.ToUInt64(textBox29.Text, 2)) *
-                             Math.Pow(2, Convert.ToUInt64(textBox28.Text, 2) - 127) *
-                             (1 + Convert.ToUInt64(textBox26.Text, 2) / Math.Pow(2, 23));
+                long por = Convert.ToInt64(textBox28.Text, 2);
+                UInt64 mant = Convert.ToUInt64(textBox26.Text, 2);
+                dec_number = (Math.Pow(-1, Convert.ToUInt64(textBox29.Text, 2)) *
+                              Math.Pow(2, por - 127) *
+                              (1 + mant / Math.Pow(2, 23)));
             }
             else
             {
@@ -380,9 +382,11 @@ namespace laboratornaya4
             double dec_number;
             if (textBox24.Text.Contains("1") || textBox22.Text.Contains("1"))
             {
-                dec_number = Math.Pow(-1, Convert.ToUInt64(textBox25.Text, 2)) *
-                             Math.Pow(2, Convert.ToUInt64(textBox24.Text, 2) - 1023) *
-                             (1 + Convert.ToUInt64(textBox22.Text, 2) / Math.Pow(2, 52));
+                long por = Convert.ToInt64(textBox24.Text, 2);
+                UInt64 mant = Convert.ToUInt64(textBox22.Text, 2);
+                dec_number = (Math.Pow(-1, Convert.ToUInt64(textBox25.Text, 2)) *
+                              Math.Pow(2, por - 1023) *
+                              (1 + mant / Math.Pow(2, 52)));
             }
             else
             {
@@ -407,9 +411,12 @@ namespace laboratornaya4
             double dec_number;
             if (textBox20.Text.Contains("1") || textBox18.Text.Contains("1"))
             {
-                dec_number = Math.Pow(-1, Convert.ToUInt64(textBox21.Text, 2)) *
-                             Math.Pow(2, Convert.ToUInt64(textBox20.Text, 2) - 16383) *
-                             (1 + Convert.ToUInt64(textBox18.Text, 2) / Math.Pow(2, 63));
+                long por = Convert.ToInt64(textBox20.Text, 2);
+                UInt64 mant =Convert.ToUInt64(textBox18.Text, 2);
+                dec_number =(Math.Pow(-1, Convert.ToUInt64(textBox21.Text, 2)) *
+                             Math.Pow(2, por - 16383) *
+                             (1 + mant / Math.Pow(2, 63)));
+           
             }
             else
             {
